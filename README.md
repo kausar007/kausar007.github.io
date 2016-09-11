@@ -7,4 +7,6 @@ A push to this repository triggers [Travis CI](https://travis-ci.org/) build. Ht
 After the build, [html-proofer](https://github.com/gjtorikian/html-proofer) runs to validate the html content.
 
 ## Licence
-**_posts** directory is Copyright Kausar Bangash. You may not reuse anything from the directory without permission.
+Following directories are Copyright Kausar Bangash. You may not reuse anything from these directories without permission.
+- **_posts**
+- **_drafts**
