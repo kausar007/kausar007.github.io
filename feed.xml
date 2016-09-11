@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kausar Bangash</title>
+    <description>Not yet another technology blog. It is collection of stuff I have learned and liked over the years.
+</description>
+    <link>http://kausarbangash.com/</link>
+    <atom:link href="http://kausarbangash.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 11 Sep 2016 01:11:49 +0100</pubDate>
+    <lastBuildDate>Sun, 11 Sep 2016 01:11:49 +0100</lastBuildDate>
+    <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>Cannot run Jekyll build as non-root user</title>
+        <description>&lt;p&gt;You have run Jekyll as root user and now cannot run as any other user and get this error message:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-plain&quot; data-lang=&quot;plain&quot;&gt;[kausar@centos ~]$ jekyll build
+Configuration file: _config.yml
+            Source: &amp;lt;omitted&amp;gt;
+       Destination: &amp;lt;omitted&amp;gt;
+ Incremental build: disabled. Enable with --incremental
+      Generating...
+jekyll 3.1.6 | Error:  Permission denied - /root&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Running the following commands as &lt;strong&gt;root&lt;/strong&gt; user will fix it.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;c&quot;&gt;# Make sure destination dir is owned by your user.&lt;/span&gt;
+chown -R &amp;lt;user&amp;gt;:&amp;lt;group&amp;gt; &amp;lt;destination_dir&amp;gt;
+&lt;span class=&quot;c&quot;&gt;# Remove jekyll metadata file.&lt;/span&gt;
+jekyll clean&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+</description>
+        <pubDate>Wed, 06 Jul 2016 02:05:00 +0100</pubDate>
+        <link>http://kausarbangash.com/2016/07/06/cannot-run-jekyll-as-non-root-user/</link>
+        <guid isPermaLink="true">http://kausarbangash.com/2016/07/06/cannot-run-jekyll-as-non-root-user/</guid>
+        
+        
+        <category>jekyll</category>
+        
+      </item>
+    
+      <item>
+        <title>Android sweet naming</title>
+        <description>&lt;p&gt;I really like Android sweet(pun intended ;)) names. Here is the list:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;First version not named. (A)&lt;/li&gt;
+  &lt;li&gt;Second version also not named. (B)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;C&lt;/strong&gt;upcake&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;D&lt;/strong&gt;onut&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;E&lt;/strong&gt;clair&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;F&lt;/strong&gt;royo&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;G&lt;/strong&gt;ingerbread&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;H&lt;/strong&gt;oneycomb&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;I&lt;/strong&gt;ce Cream Sandwich&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;J&lt;/strong&gt;elly Bean&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;K&lt;/strong&gt;itKat&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;L&lt;/strong&gt;ollipop&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;M&lt;/strong&gt;arshmallow&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;N&lt;/strong&gt;ougat&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Wed, 06 Jul 2016 00:48:00 +0100</pubDate>
+        <link>http://kausarbangash.com/2016/07/06/android-sweet-naming/</link>
+        <guid isPermaLink="true">http://kausarbangash.com/2016/07/06/android-sweet-naming/</guid>
+        
+        
+        <category>android</category>
+        
+        <category>mobile</category>
+        
+      </item>
+    
+      <item>
+        <title>Fix for no acceptable C compiler found</title>
+        <description>&lt;p&gt;While installing a ruby gem (usually first one) or running &lt;code class=&quot;highlighter-rouge&quot;&gt;make install&lt;/code&gt; command for any other installation, if you get an error like&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-plain&quot; data-lang=&quot;plain&quot;&gt;configure: error: in `/usr/lib/ruby/gems/1.8/gems/ffi-1.9.10/ext/ffi_c/libffi-x86_64-linux':
+configure: error: no acceptable C compiler found in $PATH
+See `config.log' for more details
+make: *** [&quot;/usr/lib/ruby/gems/1.8/gems/ffi-1.9.10/ext/ffi_c/libffi-x86_64-linux&quot;/.libs/libffi_convenience.a] Error 1&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;This is because &lt;code class=&quot;highlighter-rouge&quot;&gt;gcc&lt;/code&gt; is not installed on your machine. Installing &lt;code class=&quot;highlighter-rouge&quot;&gt;gcc&lt;/code&gt; will fix this issue:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;sudo yum install gcc&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;I hope this works for you.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 05 Jul 2016 02:51:00 +0100</pubDate>
+        <link>http://kausarbangash.com/2016/07/05/fix-for-no-acceptable-c-compiler-found/</link>
+        <guid isPermaLink="true">http://kausarbangash.com/2016/07/05/fix-for-no-acceptable-c-compiler-found/</guid>
+        
+        
+        <category>ruby</category>
+        
+        <category>centos</category>
+        
+        <category>error</category>
+        
+        <category>gem</category>
+        
+        <category>make</category>
+        
+      </item>
+    
+      <item>
+        <title>Fix for failed to build gem native extension</title>
+        <description>&lt;p&gt;While installing a ruby gem (usually first one) if you get an error like&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-plain&quot; data-lang=&quot;plain&quot;&gt;[kausar@centos ~]$ sudo gem install jekyll
+Building native extensions. This could take a while...
+ERROR: Error installing jekyll:
+       ERROR: Failed to build gem native extension.
+    
+/usr/bin/ruby extconf.rb
+mkmf.rb can't find header files for ruby at /usr/lib/ruby/ruby.h&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;This is because ruby development package is not installed on your machine. Installing &lt;code class=&quot;highlighter-rouge&quot;&gt;ruby-devel&lt;/code&gt; will fix this issue:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;sudo yum install ruby-devel&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;I hope this works for you.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 05 Jul 2016 02:16:00 +0100</pubDate>
+        <link>http://kausarbangash.com/2016/07/05/fix-for-failed-to-build-gem-native-extension/</link>
+        <guid isPermaLink="true">http://kausarbangash.com/2016/07/05/fix-for-failed-to-build-gem-native-extension/</guid>
+        
+        
+        <category>ruby</category>
+        
+        <category>centos</category>
+        
+        <category>error</category>
+        
+        <category>gem</category>
+        
+      </item>
+    
+  </channel>
+</rss>
