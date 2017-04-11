@@ -6,16 +6,17 @@
 </description>
     <link>http://kausarbangash.com/</link>
     <atom:link href="http://kausarbangash.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 11 Apr 2017 16:22:54 +0100</pubDate>
-    <lastBuildDate>Tue, 11 Apr 2017 16:22:54 +0100</lastBuildDate>
+    <pubDate>Tue, 11 Apr 2017 16:34:35 +0100</pubDate>
+    <lastBuildDate>Tue, 11 Apr 2017 16:34:35 +0100</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
     
       <item>
         <title>How to check MD5 hash of a file on Windows</title>
         <description>&lt;p&gt;WinMD5Free can be used to compute MD5 checksums of files. It can be downloaded from the following link.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://winmd5.com/&quot;&gt;WinMD5Free&lt;/a&gt;.
-Once downloaded, extract the zip file and run WinMD5Free.exe.
+&lt;p&gt;&lt;a href=&quot;http://winmd5.com/&quot;&gt;WinMD5Free&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Once downloaded, extract the zip file and run WinMD5Free.exe.
 Browse and select the file. WinMD5Free will compute the MD5 checksum and display it.
 Original MD5 value of the file in question can also be pasted for verification. Clicking on verify will verify that the both checksums match.&lt;/p&gt;
 </description>
