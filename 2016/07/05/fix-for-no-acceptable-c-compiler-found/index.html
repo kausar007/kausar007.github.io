@@ -9,6 +9,13 @@
   <title>Fix for no acceptable C compiler found - Kausar Bangash</title>
   <meta name="description" content="While installing a ruby gem (usually first one) or running make install command for any other installation, if an error is thrown likeconfigure: error: in `/...">
 
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+
   <link rel="stylesheet" href="/css/main.css">
   <link rel="canonical" href="http://kausarbangash.com/2016/07/05/fix-for-no-acceptable-c-compiler-found/" data-proofer-ignore>
   <link rel="alternate" type="application/rss+xml" title="Kausar Bangash" href="http://kausarbangash.com/feed.xml">
@@ -80,7 +87,7 @@ make: *** ["/usr/lib/ruby/gems/1.8/gems/ffi-1.9.10/ext/ffi_c/libffi-x86_64-linux
 
 <p>This is because <code class="highlighter-rouge">gcc</code> is not installed on the machine. Installing <code class="highlighter-rouge">gcc</code> will fix this issue:</p>
 
-<figure class="highlight"><pre><code class="language-shell" data-lang="shell">sudo yum install gcc</code></pre></figure>
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nb">sudo </span>yum <span class="nb">install </span>gcc</code></pre></figure>
 
 
   </div>

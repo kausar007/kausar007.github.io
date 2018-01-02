@@ -9,6 +9,13 @@
   <title>Cannot run Jekyll build as non-root user - Kausar Bangash</title>
   <meta name="description" content="You have run Jekyll as root user and now cannot run as any other user and get this error message:[kausar@centos ~]$ jekyll buildConfiguration file: _config.y...">
 
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+
   <link rel="stylesheet" href="/css/main.css">
   <link rel="canonical" href="http://kausarbangash.com/2016/07/06/cannot-run-jekyll-as-non-root-user/" data-proofer-ignore>
   <link rel="alternate" type="application/rss+xml" title="Kausar Bangash" href="http://kausarbangash.com/feed.xml">
@@ -84,7 +91,7 @@ jekyll 3.1.6 | Error:  Permission denied - /root</code></pre></figure>
 <p>Running the following commands as <strong>root</strong> user will fix it.</p>
 
 <figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="c"># Make sure destination dir is owned by your user.</span>
-chown -R &lt;user&gt;:&lt;group&gt; &lt;destination_dir&gt;
+<span class="nb">chown</span> <span class="nt">-R</span> &lt;user&gt;:&lt;group&gt; &lt;destination_dir&gt;
 <span class="c"># Remove jekyll metadata file.</span>
 jekyll clean</code></pre></figure>
 

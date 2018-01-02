@@ -6,9 +6,9 @@
 </description>
     <link>http://kausarbangash.com/</link>
     <atom:link href="http://kausarbangash.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 11 Apr 2017 16:34:35 +0100</pubDate>
-    <lastBuildDate>Tue, 11 Apr 2017 16:34:35 +0100</lastBuildDate>
-    <generator>Jekyll v3.4.3</generator>
+    <pubDate>Tue, 02 Jan 2018 20:43:32 +0000</pubDate>
+    <lastBuildDate>Tue, 02 Jan 2018 20:43:32 +0000</lastBuildDate>
+    <generator>Jekyll v3.7.0</generator>
     
       <item>
         <title>How to check MD5 hash of a file on Windows</title>
@@ -50,7 +50,7 @@ jekyll 3.1.6 | Error:  Permission denied - /root&lt;/code&gt;&lt;/pre&gt;&lt;/fi
 &lt;p&gt;Running the following commands as &lt;strong&gt;root&lt;/strong&gt; user will fix it.&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;c&quot;&gt;# Make sure destination dir is owned by your user.&lt;/span&gt;
-chown -R &amp;lt;user&amp;gt;:&amp;lt;group&amp;gt; &amp;lt;destination_dir&amp;gt;
+&lt;span class=&quot;nb&quot;&gt;chown&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-R&lt;/span&gt; &amp;lt;user&amp;gt;:&amp;lt;group&amp;gt; &amp;lt;destination_dir&amp;gt;
 &lt;span class=&quot;c&quot;&gt;# Remove jekyll metadata file.&lt;/span&gt;
 jekyll clean&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
@@ -107,7 +107,7 @@ make: *** [&quot;/usr/lib/ruby/gems/1.8/gems/ffi-1.9.10/ext/ffi_c/libffi-x86_64-
 
 &lt;p&gt;This is because &lt;code class=&quot;highlighter-rouge&quot;&gt;gcc&lt;/code&gt; is not installed on the machine. Installing &lt;code class=&quot;highlighter-rouge&quot;&gt;gcc&lt;/code&gt; will fix this issue:&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;sudo yum install gcc&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;yum &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;gcc&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 </description>
         <pubDate>Tue, 05 Jul 2016 02:51:00 +0100</pubDate>
@@ -141,7 +141,7 @@ mkmf.rb can't find header files for ruby at /usr/lib/ruby/ruby.h&lt;/code&gt;&lt
 
 &lt;p&gt;This is because ruby development package is not installed on your machine. Installing &lt;code class=&quot;highlighter-rouge&quot;&gt;ruby-devel&lt;/code&gt; will fix this issue:&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;sudo yum install ruby-devel&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;yum &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;ruby-devel&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;I hope this works for you.&lt;/p&gt;
 </description>

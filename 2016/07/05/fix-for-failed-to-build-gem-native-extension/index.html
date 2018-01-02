@@ -9,6 +9,13 @@
   <title>Fix for failed to build gem native extension - Kausar Bangash</title>
   <meta name="description" content="While installing a ruby gem (usually first one) if you get an error like[kausar@centos ~]$ sudo gem install jekyllBuilding native extensions. This could take...">
 
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+
   <link rel="stylesheet" href="/css/main.css">
   <link rel="canonical" href="http://kausarbangash.com/2016/07/05/fix-for-failed-to-build-gem-native-extension/" data-proofer-ignore>
   <link rel="alternate" type="application/rss+xml" title="Kausar Bangash" href="http://kausarbangash.com/feed.xml">
@@ -83,7 +90,7 @@ mkmf.rb can't find header files for ruby at /usr/lib/ruby/ruby.h</code></pre></f
 
 <p>This is because ruby development package is not installed on your machine. Installing <code class="highlighter-rouge">ruby-devel</code> will fix this issue:</p>
 
-<figure class="highlight"><pre><code class="language-shell" data-lang="shell">sudo yum install ruby-devel</code></pre></figure>
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nb">sudo </span>yum <span class="nb">install </span>ruby-devel</code></pre></figure>
 
 <p>I hope this works for you.</p>
 
